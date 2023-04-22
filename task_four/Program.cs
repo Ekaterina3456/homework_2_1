@@ -10,11 +10,23 @@ Console.WriteLine("Ведите второе число");
 int num2 = Convert.ToInt32( Console.ReadLine());
 Console.WriteLine("Ведите третье число");
 int num3 = Convert.ToInt32( Console.ReadLine());
+int max = 0;
 
 
 if (num1>num2 & num1 > num3)
-    Console.WriteLine("первое число больше");
+{
+    max = num1;
+    Console.WriteLine("max = "+max);
+}
+
 else if (num2 > num1 & num2 >num3)
-    Console.WriteLine("второе число больше");
+{
+    max = num2;
+    Console.WriteLine("max = "+max);
+}
+
 else 
-    Console.WriteLine("третье число больше");
+{
+    max = num3;
+    Console.WriteLine("max = "+max);
+}
